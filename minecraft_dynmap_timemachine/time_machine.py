@@ -13,7 +13,7 @@ class TimeMachine(object):
         self._dm_map = dm_map
         # self.dynmap = dynmap.DynMap(url)
 
-    def capture_single(self, map, t_loc, size, pause=0.25):
+    def capture_single(self, map, t_loc, size, pause=0.1):
         from_tile, to_tile = t_loc.make_range(size[0], size[1])
         zoomed_scale = projection.zoomed_scale(t_loc.zoom)
 
